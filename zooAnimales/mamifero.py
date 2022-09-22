@@ -32,7 +32,7 @@ class Mamifero(Animal):
     def setPelaje(self, pelaje):
         self.__pelaje = pelaje
         
-    def getPelaje(self):
+    def isPelaje(self):
         return self.__pelaje
     
     def setPatas(self, patas):
