@@ -19,7 +19,7 @@ class Anfibio(Animal):
     @classmethod
     def crearRana(cls, nombre, edad, genero):
         rana = Anfibio(nombre, edad, "selva", genero, "rojo", True)
-        cls.listado.append(rana)
+        cls.__listado.append(rana)
         cls.ranas += 1
     
     @classmethod
