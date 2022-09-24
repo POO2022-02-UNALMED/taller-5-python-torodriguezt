@@ -19,7 +19,7 @@ class Pez(Animal):
         self._listado.append(salmon)
         Pez.salmones += 1
      
-    def crearBacalo(self, nombre, edad, genero):
+    def crearBacalao(self, nombre, edad, genero):
         bacalao = Pez(nombre, edad, "oceano", genero, "gris", 6)
         self._listado.append(bacalao)
         Pez.bacalaos += 1
