@@ -2,7 +2,7 @@ from zooAnimales.animal import Animal
 
 class Anfibio(Animal):
     
-    listado = []
+    __listado = []
     ranas = 0
     salamandras = 0
     
@@ -12,20 +12,21 @@ class Anfibio(Animal):
         self.__venenoso = venenoso
         Animal.anfibio += 1
         
-    def cantidadAnfibios(self):
-        return len(self.__listado)
+    @classmethod
+    def cantidadAnfibios(cls):
+        return len(cls.__listado)
     
     @classmethod
     def crearRana(cls, nombre, edad, genero):
         rana = Anfibio(nombre, edad, "selva", genero, "rojo", True)
         cls.listado.append(rana)
-        Anfibio.ranas += 1
+        cls.ranas += 1
     
     @classmethod
     def crearSalamandra(cls, nombre, edad, genero):
         salamandra = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
-        cls.listado.append(salamandra)
-        Anfibio.salamandras += 1
+        cls.__listado.append(salamandra)
+        cls.salamandras += 1
     
     def setListado(self, listado):
         self.__listado = listado
@@ -44,3 +45,4 @@ class Anfibio(Animal):
         
     def isVenenoso(self):
         return self.__venenoso
+    
