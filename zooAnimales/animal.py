@@ -47,7 +47,7 @@ class Animal:
             return mensaje
             
     def totalPorTipo():
-        mensaje = (f"Mamiferos: {Animal.mamifero}\nAves: {Animal.ave}\nReptiles: {Animal.reptil}\nPeces: {Animal.pez}\nAnfibios: {Animal.anfibio}")
+        mensaje = (f"Mamiferos : {Animal.mamifero} \nAves : {Animal.ave} \nReptiles : {Animal.reptil} \nPeces : {Animal.pez}\nAnfibios : {Animal.anfibio}")
         return mensaje
     
         
