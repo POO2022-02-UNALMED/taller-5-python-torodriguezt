@@ -49,6 +49,9 @@ class Animal:
     @classmethod
     def totalPorTipo(cls):
         mensaje = (f"Mamiferos : {str(cls.mamifero)}\nAves : {str(cls.ave)}\nReptiles : {str(cls.reptil)}\nPeces : {str(cls.pez)}\nAnfibios : {str(cls.anfibio)}")
+        
+        print(cls.mamifero)
+        
         return mensaje
     
         

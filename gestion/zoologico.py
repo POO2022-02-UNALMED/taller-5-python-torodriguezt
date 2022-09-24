@@ -13,6 +13,7 @@ class Zoologico:
         total = 0
         for i in range(0, len(self.__zonas)):
             total = total + self.__zonas[i].cantidadAnimales()
+        return total
         
     def setNombre(self, nombre):
         self.__nombre = nombre
