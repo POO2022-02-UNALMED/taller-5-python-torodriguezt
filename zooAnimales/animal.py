@@ -38,6 +38,11 @@ class Animal:
     def getGenero(self):
         return self.__genero
     
+    def setZona(self, zona):
+        self.__zona.append(zona)
+        
+    def getZona(self):
+        return self.__zona    
     def toString(self):
         if self.__zona == [] and self.__zona[0].getZoo() == None:
             mensaje = f"Mi nombre es {self.__nombre}, tengo una edad de {str(self.__edad)}, habito en {self.__habitat} y mi genero es {self.__genero}"
