@@ -45,9 +45,10 @@ class Animal:
         else:
             mensaje = f"Mi nombre es {self.__nombre}, tengo una edad de {self.__edad}, habito en {self.__habitat} y mi genero es {self.__genero} la zona en la que me ubico es {self.__zona} en el {self.__zona[0].getZoo()}"
             return mensaje
-            
-    def totalPorTipo():
-        mensaje = (f"Mamiferos : {Animal.mamifero} \nAves : {Animal.ave} \nReptiles : {Animal.reptil} \nPeces : {Animal.pez}\nAnfibios : {Animal.anfibio}")
+        
+    @classmethod
+    def totalPorTipo(cls):
+        mensaje = (f"Mamiferos : {str(cls.mamifero)}\nAves : {str(cls.ave)}\nReptiles : {str(cls.reptil)}\nPeces : {str(cls.pez)}\nAnfibios : {str(cls.anfibio)}")
         return mensaje
     
         
