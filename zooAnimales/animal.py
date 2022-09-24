@@ -44,11 +44,11 @@ class Animal:
     def getZona(self):
         return self.__zona    
     def toString(self):
-        if self.__zona == [] and self.__zona[0].getZoo() == None:
-            mensaje = f"Mi nombre es {self.__nombre}, tengo una edad de {str(self.__edad)}, habito en {self.__habitat} y mi genero es {self.__genero}"
+        if self.__zona != [] and self.__zona[0].getZoo() != None:
+            mensaje = f"Mi nombre es {self.__nombre}, tengo una edad de {self.__edad}, habito en {self.__habitat} y mi genero es {self.__genero} la zona en la que me ubico es {self.__zona} en el {self.__zona[0].getZoo()}"
             return mensaje
         else:
-            mensaje = f"Mi nombre es {self.__nombre}, tengo una edad de {self.__edad}, habito en {self.__habitat} y mi genero es {self.__genero} la zona en la que me ubico es {self.__zona} en el {self.__zona[0].getZoo()}"
+            mensaje = f"Mi nombre es {self.__nombre}, tengo una edad de {self.__edad}, habito en {self.__habitat} y mi genero es {self.__genero}
             return mensaje
         
     @classmethod
