@@ -23,7 +23,7 @@ class Ave(Animal):
     @classmethod
     def crearAguila(cls, nombre, edad, genero):
         aguila = Ave(nombre, edad, "montanas", genero,"blanco y amarillo")
-        cls._listado.append(aguila)
+        cls.listado.append(aguila)
         Ave.aguilas +=1
     
     def setListado(self, listado):
